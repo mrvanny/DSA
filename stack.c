@@ -1,4 +1,5 @@
-// Stack Using Dynamic Array BY Mr.Vanny
+// Stack Using Array [Dynamic] BY Mr.Vanny
+// Feel free to ask if you have any doubts
 
 #include<stdlib.h>
 #include <stdio.h>
