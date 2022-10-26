@@ -1,4 +1,5 @@
 // Program of Queue BY Mr.Vanny 
+// Feel free to ask if you have any Doubts
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -31,21 +32,21 @@ int main()
 
             switch(c)
             {
-                case 1:printf("Enter Number to Insert \n");
+                case 1:printf("Enter Number to Insert Bro \n");
                         scanf("%d",&n);
                         enque(p,n);
                         break;
                 case 2:v=dequeue(p);
                         if(v!=-1)
                         {
-                        printf("Deleted value is : %d \n",v);
+                        printf("Deleted valueye hai bhai : %d \n",v);
                         }
                         break;
                 case 3:queuesize(p);
                         break;
                 case 4: deletequeue(p);
                         break;
-                default:printf("Invalid Choice \n");
+                default:printf("Invalid Choice  Bro \n");
             }
    }
 }
@@ -135,7 +136,7 @@ void deletequeue(struct arrayq *q)
         if(q->array)
         {
             free(q->array);
-            printf("Queue deleted \n");
+            printf("Queue delete kr diya bro \n");
         }
         free(q);    
     }
