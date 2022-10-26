@@ -22,7 +22,7 @@ void main()
 {
     int ch,val,cap,x=0,k;
     struct ArrayStack * stack;
-    printf("Enter capcity of stack");
+    printf("Stack me kitne elements chahiye bro ?");
     scanf("%d",&cap);
     stack=createStack(cap);
     while(1)
@@ -39,12 +39,12 @@ void main()
         {
             case 1:
             {
-                printf("Enter value \t");
+                printf("Value enter kr bro \t");
                 scanf("%d",&val);
                 x=push(stack,val);
                 if(x==-1)
                 {
-                    printf("\nStack is full\n");
+                    printf("\nStack full hai dude \n");
                 }
               
                 break;
@@ -54,7 +54,7 @@ void main()
                 val=pop(stack);
                 if(val==-1)
                 {
-                    printf(" \nstack is empty\n");
+                    printf(" \nstack empty hai dude\n");
                 }
                 else
                 {
@@ -133,7 +133,7 @@ int pop(struct ArrayStack *stack)
 int display(struct ArrayStack *stack)
 {
     if(!isEmpty(stack))
-         printf("\n At the top value is: %d \n",stack->Array[stack->top]);
+         printf("\n Top pe ye value hai biro : %d \n",stack->Array[stack->top]);
      else
      {
         printf("\n Stack is Empty Bro \n");
